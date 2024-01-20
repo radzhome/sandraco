@@ -539,3 +539,15 @@ h6,
 .copyright a:hover {
     color: var(--primary);
 }
+
+/* anchored footer to scroll to the section anchor title */
+.anchored-link {
+    padding-top: 95px;
+    margin-top: -95px;
+}
+@media (max-width: 992px) {
+    .anchored-link {
+        padding-top: 336px;
+        margin-top: -336px;
+    }
+}
