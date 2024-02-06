@@ -50,8 +50,8 @@
                 <small class="ms-4"><i class="fa fa-clock text-primary me-2"></i>9.00 am - 4.00 pm</small>
             </div>
             <div class="col-lg-6 px-5 text-end">
-                <small><i class="fa fa-envelope text-primary me-2"></i>sk@sandrako.ca</small>
-                <small class="ms-4"><i class="fa fa-phone-alt text-primary me-2"></i>+1 289-700-4365</small>
+                <small><i class="fa fa-envelope text-primary me-2"></i><a href="mailto:sk@sandrako.ca">sk@sandrako.ca</a></small>
+                <small class="ms-4"><i class="fa fa-phone-alt text-primary me-2"></i><a href="tel:289-700-4365">+1 289-700-4365</a></small>
             </div>
         </div>
 
@@ -422,57 +422,109 @@
 
 
     <!-- Callback Start -->
-    <div class="container-fluid callback my-5 pt-5">
-        <div class="container pt-5">
-            <div class="row justify-content-center">
-                <div class="col-lg-7">
-                    <div class="bg-white border rounded p-4 p-sm-5 wow fadeInUp" data-wow-delay="0.5s">
-                        <div class="text-center mx-auto wow fadeInUp" data-wow-delay="0.1s" style="max-width: 600px;">
-                            <p class="d-inline-block border rounded text-primary fw-semi-bold py-1 px-3">Get In Touch
-                            </p>
-                            <h1 class="display-5 mb-5">Ready to Outsource?</h1>
-                        </div>
-                        <div class="row g-3">
-                            <div class="col-sm-6">
-                                <div class="form-floating">
-                                    <input type="text" class="form-control" id="name" placeholder="Your Name">
-                                    <label for="name">Your Name</label>
-                                </div>
-                            </div>
-                            <div class="col-sm-6">
-                                <div class="form-floating">
-                                    <input type="email" class="form-control" id="mail" placeholder="Your Email">
-                                    <label for="mail">Your Email</label>
-                                </div>
-                            </div>
-                            <div class="col-sm-6">
-                                <div class="form-floating">
-                                    <input type="text" class="form-control" id="mobile" placeholder="Your Mobile">
-                                    <label for="mobile">Your Mobile</label>
-                                </div>
-                            </div>
-                            <div class="col-sm-6">
-                                <div class="form-floating">
-                                    <input type="text" class="form-control" id="subject" placeholder="Subject">
-                                    <label for="subject">Subject</label>
-                                </div>
-                            </div>
-                            <div class="col-12">
-                                <div class="form-floating">
-                                    <textarea class="form-control" placeholder="Leave a message here" id="message"
-                                        style="height: 100px"></textarea>
-                                    <label for="message">Message</label>
-                                </div>
-                            </div>
-                            <div class="col-12 text-center">
-                                <button class="btn btn-primary w-100 py-3" type="submit">Submit Now</button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
+<!--    <div class="container-fluid callback my-5 pt-5">-->
+<!--        <div class="container pt-5">-->
+<!--            <div class="row justify-content-center">-->
+<!--                <div class="col-lg-7">-->
+<!--                    <div class="bg-white border rounded p-4 p-sm-5 wow fadeInUp" data-wow-delay="0.5s">-->
+<!--                        <div class="text-center mx-auto wow fadeInUp" data-wow-delay="0.1s" style="max-width: 600px;">-->
+<!--                            <p class="d-inline-block border rounded text-primary fw-semi-bold py-1 px-3">Get In Touch-->
+<!--                            </p>-->
+<!--                            <h1 class="display-5 mb-5">Ready to Outsource?</h1>-->
+<!--                        </div>-->
+<!--                        <div class="row g-3">-->
+<!--                            <div class="col-sm-6">-->
+<!--                                <div class="form-floating">-->
+<!--                                    <input type="text" class="form-control" id="name" placeholder="Your Name">-->
+<!--                                    <label for="name">Your Name</label>-->
+<!--                                </div>-->
+<!--                            </div>-->
+<!--                            <div class="col-sm-6">-->
+<!--                                <div class="form-floating">-->
+<!--                                    <input type="email" class="form-control" id="mail" placeholder="Your Email">-->
+<!--                                    <label for="mail">Your Email</label>-->
+<!--                                </div>-->
+<!--                            </div>-->
+<!--                            <div class="col-sm-6">-->
+<!--                                <div class="form-floating">-->
+<!--                                    <input type="text" class="form-control" id="mobile" placeholder="Your Mobile">-->
+<!--                                    <label for="mobile">Your Mobile</label>-->
+<!--                                </div>-->
+<!--                            </div>-->
+<!--                            <div class="col-sm-6">-->
+<!--                                <div class="form-floating">-->
+<!--                                    <input type="text" class="form-control" id="subject" placeholder="Subject">-->
+<!--                                    <label for="subject">Subject</label>-->
+<!--                                </div>-->
+<!--                            </div>-->
+<!--                            <div class="col-12">-->
+<!--                                <div class="form-floating">-->
+<!--                                    <textarea class="form-control" placeholder="Leave a message here" id="message"-->
+<!--                                        style="height: 100px"></textarea>-->
+<!--                                    <label for="message">Message</label>-->
+<!--                                </div>-->
+<!--                            </div>-->
+<!--                            <div class="col-12 text-center">-->
+<!--                                <button class="btn btn-primary w-100 py-3" type="submit">Submit Now</button>-->
+<!--                            </div>-->
+<!--                        </div>-->
+<!--                    </div>-->
+<!--                </div>-->
+<!--            </div>-->
+<!--        </div>-->
+<!--    </div>-->
+
+<!--    <div class="container-fluid callback my-5 pt-5">-->
+<!--        <div class="container pt-5">-->
+<!--            <div class="row justify-content-center">-->
+<!--                <div class="col-lg-7">-->
+<!--                    <div class="bg-white border rounded p-4 p-sm-5 wow fadeInUp" data-wow-delay="0.5s">-->
+<!--                        <div class="text-center mx-auto wow fadeInUp" data-wow-delay="0.1s" style="max-width: 600px;">-->
+<!--                            <p class="d-inline-block border rounded text-primary fw-semi-bold py-1 px-3">Get In Touch-->
+<!--                            </p>-->
+<!--                            <h1 class="display-5 mb-5">Request A Call-Back</h1>-->
+<!--                        </div>-->
+<!--                        <div class="row g-3">-->
+<!--                            <div class="col-sm-6">-->
+<!--                                <div class="form-floating">-->
+<!--                                    <input type="text" class="form-control" id="name" placeholder="Your Name">-->
+<!--                                    <label for="name">Your Name</label>-->
+<!--                                </div>-->
+<!--                            </div>-->
+<!--                            <div class="col-sm-6">-->
+<!--                                <div class="form-floating">-->
+<!--                                    <input type="email" class="form-control" id="mail" placeholder="Your Email">-->
+<!--                                    <label for="mail">Your Email</label>-->
+<!--                                </div>-->
+<!--                            </div>-->
+<!--                            <div class="col-sm-6">-->
+<!--                                <div class="form-floating">-->
+<!--                                    <input type="text" class="form-control" id="mobile" placeholder="Your Mobile">-->
+<!--                                    <label for="mobile">Your Mobile</label>-->
+<!--                                </div>-->
+<!--                            </div>-->
+<!--                            <div class="col-sm-6">-->
+<!--                                <div class="form-floating">-->
+<!--                                    <input type="text" class="form-control" id="subject" placeholder="Subject">-->
+<!--                                    <label for="subject">Subject</label>-->
+<!--                                </div>-->
+<!--                            </div>-->
+<!--                            <div class="col-12">-->
+<!--                                <div class="form-floating">-->
+<!--                                    <textarea class="form-control" placeholder="Leave a message here" id="message"-->
+<!--                                        style="height: 100px"></textarea>-->
+<!--                                    <label for="message">Message</label>-->
+<!--                                </div>-->
+<!--                            </div>-->
+<!--                            <div class="col-12 text-center">-->
+<!--                                <button class="btn btn-primary w-100 py-3" type="submit">Submit Now</button>-->
+<!--                            </div>-->
+<!--                        </div>-->
+<!--                    </div>-->
+<!--                </div>-->
+<!--            </div>-->
+<!--        </div>-->
+<!--    </div>-->
     <!-- Callback End -->
 
 
@@ -527,68 +579,68 @@
 
 
     <!-- Team Start -->
-    <div class="container-xxl py-5">
-        <div class="container">
-            <div class="text-center mx-auto wow fadeInUp" data-wow-delay="0.1s" style="max-width: 600px;">
-                <p class="d-inline-block border rounded text-primary fw-semi-bold py-1 px-3">Our Team</p>
-                <h1 class="display-5 mb-5">Exclusive Team</h1>
-            </div>
-            <div class="row g-4">
-                <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
-                    <div class="team-item">
-                        <img class="img-fluid rounded" src="img/team-1.jpg" alt="">
-                        <div class="team-text">
-                            <h4 class="mb-0">Sandra Koziarski </h4>
-                            <div class="team-social d-flex">
-                                <a class="btn btn-square rounded-circle mx-1" href=""><i
-                                        class="fab fa-facebook-f"></i></a>
-                                <a class="btn btn-square rounded-circle mx-1" href=""><i class="fab fa-twitter"></i></a>
-                                <a class="btn btn-square rounded-circle mx-1" href=""><i
-                                        class="fab fa-instagram"></i></a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
-                    <div class="team-item">
-                        <img class="img-fluid rounded" src="img/team-2.jpg" alt="">
-                        <div class="team-text">
-                            <h4 class="mb-0">Jac Jacson</h4>
-                            <div class="team-social d-flex">
-                                <a class="btn btn-square rounded-circle mx-1" href=""><i
-                                        class="fab fa-facebook-f"></i></a>
-                                <a class="btn btn-square rounded-circle mx-1" href=""><i class="fab fa-twitter"></i></a>
-                                <a class="btn btn-square rounded-circle mx-1" href=""><i
-                                        class="fab fa-instagram"></i></a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
-                    <div class="team-item">
-                        <img class="img-fluid rounded" src="img/team-3.jpg" alt="">
-                        <div class="team-text">
-                            <h4 class="mb-0">Doris Jordan</h4>
-                            <div class="team-social d-flex">
-                                <a class="btn btn-square rounded-circle mx-1" href=""><i
-                                        class="fab fa-facebook-f"></i></a>
-                                <a class="btn btn-square rounded-circle mx-1" href=""><i class="fab fa-twitter"></i></a>
-                                <a class="btn btn-square rounded-circle mx-1" href=""><i
-                                        class="fab fa-instagram"></i></a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
+<!--    <div class="container-xxl py-5">-->
+<!--        <div class="container">-->
+<!--            <div class="text-center mx-auto wow fadeInUp" data-wow-delay="0.1s" style="max-width: 600px;">-->
+<!--                <p class="d-inline-block border rounded text-primary fw-semi-bold py-1 px-3">Our Team</p>-->
+<!--                <h1 class="display-5 mb-5">Exclusive Team</h1>-->
+<!--            </div>-->
+<!--            <div class="row g-4">-->
+<!--                <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s">-->
+<!--                    <div class="team-item">-->
+<!--                        <img class="img-fluid rounded" src="img/team-1.jpg" alt="">-->
+<!--                        <div class="team-text">-->
+<!--                            <h4 class="mb-0">Kate Winslet</h4>-->
+<!--                            <div class="team-social d-flex">-->
+<!--                                <a class="btn btn-square rounded-circle mx-1" href=""><i-->
+<!--                                        class="fab fa-facebook-f"></i></a>-->
+<!--                                <a class="btn btn-square rounded-circle mx-1" href=""><i class="fab fa-twitter"></i></a>-->
+<!--                                <a class="btn btn-square rounded-circle mx-1" href=""><i-->
+<!--                                        class="fab fa-instagram"></i></a>-->
+<!--                            </div>-->
+<!--                        </div>-->
+<!--                    </div>-->
+<!--                </div>-->
+<!--                <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.3s">-->
+<!--                    <div class="team-item">-->
+<!--                        <img class="img-fluid rounded" src="img/team-2.jpg" alt="">-->
+<!--                        <div class="team-text">-->
+<!--                            <h4 class="mb-0">Jac Jacson</h4>-->
+<!--                            <div class="team-social d-flex">-->
+<!--                                <a class="btn btn-square rounded-circle mx-1" href=""><i-->
+<!--                                        class="fab fa-facebook-f"></i></a>-->
+<!--                                <a class="btn btn-square rounded-circle mx-1" href=""><i class="fab fa-twitter"></i></a>-->
+<!--                                <a class="btn btn-square rounded-circle mx-1" href=""><i-->
+<!--                                        class="fab fa-instagram"></i></a>-->
+<!--                            </div>-->
+<!--                        </div>-->
+<!--                    </div>-->
+<!--                </div>-->
+<!--                <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.5s">-->
+<!--                    <div class="team-item">-->
+<!--                        <img class="img-fluid rounded" src="img/team-3.jpg" alt="">-->
+<!--                        <div class="team-text">-->
+<!--                            <h4 class="mb-0">Doris Jordan</h4>-->
+<!--                            <div class="team-social d-flex">-->
+<!--                                <a class="btn btn-square rounded-circle mx-1" href=""><i-->
+<!--                                        class="fab fa-facebook-f"></i></a>-->
+<!--                                <a class="btn btn-square rounded-circle mx-1" href=""><i class="fab fa-twitter"></i></a>-->
+<!--                                <a class="btn btn-square rounded-circle mx-1" href=""><i-->
+<!--                                        class="fab fa-instagram"></i></a>-->
+<!--                            </div>-->
+<!--                        </div>-->
+<!--                    </div>-->
+<!--                </div>-->
+<!--            </div>-->
+<!--        </div>-->
+<!--    </div>-->
     <!-- Team End -->
 
 
     <!-- Testimonial Start -->
 <!--    <div class="container-xxl py-5">-->
 <!--        <div class="container">-->
-<!--            <div class="text-center mx-auto wow fadeInUp" data-wow-delay="0.1s" style="max-width: 600px;">-->
+<!--           <div class="text-center mx-auto wow fadeInUp" data-wow-delay="0.1s" style="max-width: 600px;">-->
 <!--                <p class="d-inline-block border rounded text-primary fw-semi-bold py-1 px-3">Testimonial</p>-->
 <!--                <h1 class="display-5 mb-5">What Our Clients Say!</h1>-->
 <!--            </div>-->
@@ -654,8 +706,8 @@
                 <div class="col-lg-3 col-md-6">
                     <h4 class="text-white mb-4">Our Office</h4>
                     <p class="mb-2"><i class="fa fa-map-marker-alt me-3"></i>125 Festival Way, Binbrook, ON</p>
-                    <p class="mb-2"><i class="fa fa-phone-alt me-3"></i>+1 289-700-4365</p>
-                    <p class="mb-2"><i class="fa fa-envelope me-3"></i>sk@sandrako.ca</p>
+                    <p class="mb-2"><i class="fa fa-phone-alt me-3"></i><a href="tel:289-700-4365">+1 289-700-4365</a></p>
+                    <p class="mb-2"><i class="fa fa-envelope me-3"></i><a href="mailto:sk@sandrako.ca">sk@sandrako.ca</a></p>
                     <div class="d-flex pt-2">
                         <a class="btn btn-square btn-outline-light rounded-circle me-2" href=""><i
                                 class="fab fa-twitter"></i></a>
