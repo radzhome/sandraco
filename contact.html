@@ -162,37 +162,39 @@
                     <p class="d-inline-block border rounded text-primary fw-semi-bold py-1 px-3">Contact</p>
                     <h1 class="display-5 mb-4">If You Have Any Query, Please Contact Us</h1>
                     <p class="mb-4">Please include a detailed message and we will get back to you as soon as possible.</p>
+                    <p class="mb-4"><a href="https://www.google.com/maps/dir//125+Festival+Way,+Binbrook,+ON+L0R+1C0" target="_blank">Directions</a></p>
+
                     <p class="mb-4">Please email <a href="mailto:sk@sandrako.ca">sk@sandrako.ca</a> or call <a href="tel:289-700-4365">289-700-4365</a>.</p>
-                    <a href="https://www.google.com/maps/dir//125+Festival+Way,+Binbrook,+ON+L0R+1C0" target="_blank">Directions</a>
+
                     <form id="emailForm" action="/email" method="post">
                         <div class="row g-3">
                             <div class="col-md-6">
                                 <div class="form-floating">
-                                    <input type="text" class="form-control" id="name" placeholder="Your Name">
+                                    <input type="text" class="form-control" id="from_user" placeholder="Your Name" name="from_user" required>
                                     <label for="name">Your Name</label>
                                 </div>
                             </div>
                             <div class="col-md-6">
                                 <div class="form-floating">
-                                    <input type="email" class="form-control" id="email" placeholder="Your Email">
+                                    <input type="email" class="form-control" id="email" placeholder="Your Email" name="from_user_email" required>
                                     <label for="email">Your Email</label>
                                 </div>
                             </div>
                             <div class="col-12">
                                 <div class="form-floating">
-                                    <input type="text" class="form-control" id="subject" placeholder="Subject">
+                                    <input type="text" class="form-control" id="subject" name="subject" placeholder="Subject" required>
                                     <label for="subject">Subject</label>
                                 </div>
                             </div>
                             <div class="col-12">
                                 <div class="form-floating">
                                     <textarea class="form-control" placeholder="Leave a message here" id="message"
-                                        style="height: 100px"></textarea>
+                                        style="height: 100px" name="message" required></textarea>
                                     <label for="message">Message</label>
                                 </div>
                             </div>
                             <div class="col-12">
-                                <button class="btn btn-primary py-3 px-5" type="submit">Send Message</button>
+                                <input type="submit" class="btn btn-primary py-3 px-5" type="submit" value="Send Message">
                             </div>
                         </div>
                     </form>
