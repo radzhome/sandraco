@@ -82,6 +82,35 @@
     <script type="text/javascript" src="https://w.sharethis.com/button/buttons.js"></script>
     <script type="text/javascript">stLight.options({publisher: "87d14b75-7d21-4e2d-91a4-6eb974f26cb3", doNotHash: false, doNotCopy: false, hashAddressBar: false});</script>
 
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            document.getElementById('submitBtn').addEventListener('click', function () {
+                // Gather form data
+                var formData = new FormData(document.getElementById('emailForm'));
+
+                // Send AJAX request
+                var xhr = new XMLHttpRequest();
+                xhr.open('POST', '/email', true);
+                xhr.setRequestHeader('X-Requested-With', 'XMLHttpRequest');
+                xhr.onload = function () {
+                    if (xhr.status === 200) {
+                        // Hide the form and show thank you message
+                        document.getElementById('emailFormContainer').style.display = 'none';
+                        document.getElementById('thankYouMessage').style.display = 'block';
+                    } else {
+                        // Handle error
+                        console.error('Error:', xhr.responseText);
+                    }
+                };
+                xhr.onerror = function () {
+                    // Handle network error
+                    console.error('Network Error');
+                };
+                xhr.send(formData);
+            });
+        });
+    </script>
+
 </head>
 
 <body>
@@ -166,38 +195,44 @@
 
                     <p class="mb-4">Please email <a href="mailto:sk@sandrako.ca">sk@sandrako.ca</a> or call <a href="tel:289-700-4365">289-700-4365</a>.</p>
 
-                    <form id="emailForm" action="/email" method="post">
-                        <div class="row g-3">
-                            <div class="col-md-6">
-                                <div class="form-floating">
-                                    <input type="text" class="form-control" id="from_user" placeholder="Your Name" name="from_user" required>
-                                    <label for="name">Your Name</label>
+                    <div id="emailFormContainer">
+                        <form id="emailForm" action="/email" method="post">
+                            <div class="row g-3">
+                                <div class="col-md-6">
+                                    <div class="form-floating">
+                                        <input type="text" class="form-control" id="from_user" placeholder="Your Name" name="from_user" required>
+                                        <label for="name">Your Name</label>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="form-floating">
+                                        <input type="email" class="form-control" id="email" placeholder="Your Email" name="from_user_email" required>
+                                        <label for="email">Your Email</label>
+                                    </div>
+                                </div>
+                                <div class="col-12">
+                                    <div class="form-floating">
+                                        <input type="text" class="form-control" id="subject" name="subject" placeholder="Subject" required>
+                                        <label for="subject">Subject</label>
+                                    </div>
+                                </div>
+                                <div class="col-12">
+                                    <div class="form-floating">
+                                        <textarea class="form-control" placeholder="Leave a message here" id="message"
+                                            style="height: 100px" name="message" required></textarea>
+                                        <label for="message">Message</label>
+                                    </div>
+                                </div>
+                                <div class="col-12">
+                                    <button id="submitBtn" class="btn btn-primary py-3 px-5" type="button">Send Message</button>
                                 </div>
                             </div>
-                            <div class="col-md-6">
-                                <div class="form-floating">
-                                    <input type="email" class="form-control" id="email" placeholder="Your Email" name="from_user_email" required>
-                                    <label for="email">Your Email</label>
-                                </div>
-                            </div>
-                            <div class="col-12">
-                                <div class="form-floating">
-                                    <input type="text" class="form-control" id="subject" name="subject" placeholder="Subject" required>
-                                    <label for="subject">Subject</label>
-                                </div>
-                            </div>
-                            <div class="col-12">
-                                <div class="form-floating">
-                                    <textarea class="form-control" placeholder="Leave a message here" id="message"
-                                        style="height: 100px" name="message" required></textarea>
-                                    <label for="message">Message</label>
-                                </div>
-                            </div>
-                            <div class="col-12">
-                                <input type="submit" class="btn btn-primary py-3 px-5" type="submit" value="Send Message">
-                            </div>
-                        </div>
-                    </form>
+                        </form>
+                    </div>
+                    <div id="thankYouMessage" style="display: none;">
+                        <p>Thank you for your message!</p>
+                    </div>
+
                 </div>
                 <div class="col-lg-6 wow fadeIn" data-wow-delay="0.5s" style="min-height: 450px;">
                     <div class="position-relative rounded overflow-hidden h-100">
